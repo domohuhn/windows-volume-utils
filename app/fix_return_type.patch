@@ -1,0 +1,22 @@
+diff --git a/cheat/gui.cpp b/cheat/gui.cpp
+index 610247b..8c7ffe7 100644
+--- a/cheat/gui.cpp
++++ b/cheat/gui.cpp
+@@ -4,6 +4,8 @@
+ #include "../imgui/imgui_impl_dx9.h"
+ #include "../imgui/imgui_impl_win32.h"
+ 
++#pragma comment (lib,"d3d9.lib")
++
+ extern IMGUI_IMPL_API LRESULT ImGui_ImplWin32_WndProcHandler(
+ 	HWND window,
+ 	UINT message,
+@@ -11,7 +13,7 @@ extern IMGUI_IMPL_API LRESULT ImGui_ImplWin32_WndProcHandler(
+ 	LPARAM longParameter
+ );
+ 
+-long __stdcall WindowProcess(
++LRESULT __stdcall WindowProcess(
+ 	HWND window,
+ 	UINT message,
+ 	WPARAM wideParameter,
