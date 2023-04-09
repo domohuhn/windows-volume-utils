@@ -1,5 +1,7 @@
 # Microphone utilites for windows
 
+[![MSVC build](https://github.com/domohuhn/windows-volume-utils/actions/workflows/msvc.yml/badge.svg)](https://github.com/domohuhn/windows-volume-utils/actions/workflows/msvc.yml)
+
 This repository contains utilities to control the speaker and microphone volume of the default device on the Windows operating system.
 Feel free to use or modify the code, as it is mostly made to learn using the windows API.
 
